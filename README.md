@@ -1,5 +1,5 @@
 # Flask App with Environment Variables
-# for Task 2 Armageddons
+# For Task 2 Armageddon
 
 A simple Flask web application that displays configurable content using environment variables. With cloud run commands.
 
