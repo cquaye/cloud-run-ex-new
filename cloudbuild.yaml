@@ -1,0 +1,12 @@
+steps:
+  # build the docker image
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["build", "-t", "us-central1-docker.pkg.dev/dusty-class-6-5-carlton-quaye/cloud-run-ex-new/test:latest", "."]
+  - name: "gcr.io/cloud-builders/docker"
+    # push the built image to the Artifact Registry
+
+    args: ["push", "us-central1-docker.pkg.dev/dusty-class-6-5-carlton-quaye/cloud-run-ex-new/test:latest"]
+images:
+  - "us-central1-docker.pkg.dev/dusty-class-6-5-carlton-quaye/cloud-run-ex-new/test:latest"
+options:
+  logging: CLOUD_LOGGING_ONLY
