@@ -11,7 +11,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     # Get the header text from environment variable
-    header_text = os.getenv('HEADER_TEXT', 'Suck it for a stack now bitches!')
+    header_text = os.getenv('HEADER_TEXT', 'Suck it for a stack bitches!')
     # Get the image URL from environment variable
     image_url = os.getenv('IMAGE_URL', '')
     return render_template('index.html', header_text=header_text, image_url=image_url)
